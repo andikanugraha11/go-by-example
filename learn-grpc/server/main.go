@@ -23,7 +23,7 @@ func (u *userService) GetUser(ctx context.Context, req *userpb.GetUserRequest) (
 }
 
 func main() {
-	listen, err := net.Listen("tcp", "localhost:9897")
+	listen, err := net.Listen("tcp", "localhost:9879")
 	if err != nil {
 		log.Fatalf("Failed listen %v", err)
 	}
