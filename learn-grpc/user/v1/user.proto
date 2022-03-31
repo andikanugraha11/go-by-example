@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package user.v1;
+
+option go_package = "github.com/andikanugraha11/go-by-example/learn-grpc/gen/go/user/v1;userpb";
+
+message User {
+    string uuid = 1;
+    string first_name = 2;
+    string last_name= 3;
+    int64 birth_year = 4;
+    uint32 salary = 5;
+    repeated SocialMedia social_medias = 6;
+    Gender gender = 7;
+}
+
+message SocialMedia {
+    string name = 1;
+    string username = 2;
+    string url = 3;
+}
+
+enum Gender {
+    GENDER_MALE = 0;
+    GENDER_FEMALE = 1;
+}

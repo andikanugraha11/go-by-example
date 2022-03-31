@@ -1,0 +1,1 @@
+protoc user\v1\user.proto --go_out=paths=source_relative:./gen 
